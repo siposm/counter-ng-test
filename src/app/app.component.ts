@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.sass'
 })
 export class AppComponent {
-  title = 'counterapp';
+  counter: number = 0
+  inc(): void { this.counter++ }
+  dec(): void { this.counter-- }
 }
