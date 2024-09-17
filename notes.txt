@@ -1,0 +1,60 @@
+DEVOPS -> a teljes szoftverüzemeltetési élet lefedése
+
+felhőszolgáltatások szintjei
+    - SaaS: software as a service
+    - PaaS: platform as a service
+    - IaaS: infrastructure as a service
+
+hosting
+    maga az a módszer, hogy egy alkalmazás "hostolva", szolgáltatva van valahol a világon
+
+    opciók:
+        - klasszikus tárhely + domain
+            - PRO: egyszerű és gyors
+            - CON: limitált
+        - vps (virtual private server)
+            - PRO: bármire van lehetőség
+            - CON: bonyolult
+        - felhőszolgáltatás
+            - google firebase
+            - aws amazon web services
+            - microsoft azure
+        - statikus hosting opciók
+            - vercel
+            - github pages
+            - netlify
+            - heroku
+
+deploy(ment)
+    az alkalmazás valahova "kitelepül", kideployolódik a hosting helyre
+
+
+
+
+ng new counterapp --standalone=false
+
+ng build --configuration production --base-href /counter-test/ --output-path docs
+
+angular.json beállítások...
+    "outputPath": {
+        "base": "docs",
+        "browser": ""
+    },
+    "baseHref": "/counter-ng-test/",
+
+ng build --configuration production
+
+
+
+########################################
+########################################
+########################################
+########################################
+########################################
+
+
+ng new problemapp --standalone=false --style=sass --ssr=false --skip-tests=true && 
+cd problemapp && 
+ng g class problem && 
+ng g c dashboard && 
+ng g s problem
